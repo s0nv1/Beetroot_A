@@ -1,2 +1,0 @@
-# Beetroot_A
-Education
