@@ -15,5 +15,4 @@ print('''#########
 #########''')
 
 # Output letter 'H' made from symbol '#' with help '\n' and '\t'.
-# ps. first '\n' for
 print('\n#\t\t#\n#\t\t#\n#########\n#\t\t#\n#\t\t#')
