@@ -20,7 +20,7 @@ while True:
 # The name check.
 my_name = 'ihor'
 name = input('Write your name: ').lower()
-if name == my_name:
+if name == my_name: # print(name == my_name)
     print(True)
 else:
     print(False)
