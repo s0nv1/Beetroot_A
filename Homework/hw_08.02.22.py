@@ -6,7 +6,7 @@ print('Hello world')
 print('Hello', 'world', sep=', ')
 
 # Output text: 'Hello', 'world'. With separation = ', ',ending = '!'.
-print('Hello', 'world', sep=', ', end='!')
+print('Hello', 'world', sep=', ', end='!\n')
 
 # Task 3
 # Output letter 'O' made from symbol '#' with help ''''''.
