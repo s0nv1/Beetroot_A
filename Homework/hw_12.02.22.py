@@ -1,6 +1,6 @@
 # Task 1
 # String manipulation.
-text = input()
+text = input('Write text: ')
 if len(text) >= 2:
     print(text[:2] + text[-2:])
 else:
@@ -20,7 +20,7 @@ while True:
 # The name check.
 my_name = 'ihor'
 name = input('Write your name: ').lower()
-if name == my_name: # print(name == my_name)
+if name == my_name:  # print(name == my_name)
     print(True)
 else:
     print(False)
