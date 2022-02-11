@@ -1,7 +1,7 @@
 # Task 1
 # String manipulation.
 text = input('Write text: ')
-if len(text) >= 2:
+if len(text) > 1:
     print(text[:2] + text[-2:])
 else:
     print('Empty String')
