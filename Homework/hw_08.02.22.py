@@ -1,3 +1,8 @@
+# comment from Viktoriia
+# On task 3 pay attention that usage of spaces is forbidden, as well as creating the whole result text string using “”” ”””, use ‘\n’ and ‘\t’ symbols instead.
+# everything else is fine, good job!
+
+
 # Task 2
 # Output text: 'Hello world'.
 print('Hello world')
