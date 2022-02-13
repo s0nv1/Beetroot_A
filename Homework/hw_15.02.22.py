@@ -51,9 +51,13 @@ def start_game(n):
                 continue
             else:
                 attempt += 1
-                if attempt == n:
+                if choosen_digit == random_digit:
                     time.sleep(1)
-                    print('Not today:(')
+                    print(f'Wow you guessed it. It\'s {random_digit} and number of attempts {attempt}.')
+                    break
+                elif attempt == n:
+                    time.sleep(1)
+                    print(f'Not today. It\' {random_digit}.')
                     time.sleep(1)
                 elif choosen_digit > random_digit:
                     time.sleep(1)
@@ -61,10 +65,6 @@ def start_game(n):
                 elif choosen_digit < random_digit:
                     time.sleep(1)
                     print('More')
-                else:
-                    time.sleep(1)
-                    print(f'Wow you guessed it. It\'s {random_digit} and number of attempts {attempt}.')
-                    break
 
 
 def play_or_dead():
@@ -107,6 +107,7 @@ words_combination()
 # The math quiz program
 from random import randint
 
+
 def math_adding():
     a, b = randint(1, 100), randint(1, 100)
     answer = int(input(f'Write your answer. {a} + {b} = '))
@@ -117,4 +118,3 @@ def math_adding():
 
 
 math_adding()
-
