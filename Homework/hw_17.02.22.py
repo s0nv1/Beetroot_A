@@ -1,8 +1,8 @@
 # Task 1
 # The greatest number
-import random
+from random import randint
 
-list_num = [random.randint(1, 100) for i in range(10)]
+list_num = [randint(1, 100) for i in range(10)]
 count = 0
 max_digit = 0
 while count != len(list_num):
@@ -19,12 +19,14 @@ for i in list_num:
 print(max_digit)
 # max()
 print(max(list_num))
+
+
 # Task 2
 # Exclusive common numbers.
-import random
+from random import randint
 
-rand_list, rand_list_second = list(set([random.randint(1, 10) for i in range(10)])),\
-                              list(set([random.randint(1, 10) for j in range(10)]))
+rand_list, rand_list_second = list(set([randint(1, 10) for i in range(10)])),\
+                              list(set([randint(1, 10) for j in range(10)]))
 same_digits = []
 count = 0
 while count != len(rand_list):
@@ -33,6 +35,7 @@ while count != len(rand_list):
     count += 1
 else:
     print(*same_digits)
+
 
 # Task 3
 # Extracting numbers.
