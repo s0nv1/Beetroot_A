@@ -1,4 +1,4 @@
 # Beetroot Academy 
-1.Lessons
+1.Class work
 
 2.Homework
