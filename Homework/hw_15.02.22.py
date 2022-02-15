@@ -48,7 +48,6 @@ def start_game(n):
         else:
             if choosen_digit < 1 or choosen_digit > 10:
                 print('You only need to write from 1 to 10.')
-                continue
             else:
                 attempt += 1
                 if choosen_digit == random_digit:
