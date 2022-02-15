@@ -36,6 +36,7 @@ def number_of_attempts():
 
 
 def start_game(n):
+    random_digit = random.randint(1, 10)
     time.sleep(1.5)
     attempt = 0
     print('Just do it!')
@@ -75,7 +76,6 @@ def play_or_dead():
 
 
 while True:
-    random_digit = random.randint(1, 10)
     load_game()
     number = number_of_attempts()
     start_game(number)
