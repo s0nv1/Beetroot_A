@@ -1,12 +1,25 @@
+# Множества set()
+s = set('world')
+t = set('hello')
+print(s)
+print(len(s))
+print('o' in s)
+print(s.isdisjoint(t))
+print(s == t)
+print(s.issubset(t))
+print(s.issuperset(t))
+print(s.difference(t))
 
-while True:
-    try:
-        c, m, y, k = float(input()), float(input()), float(input()), float(input())
-    except ValueError:
-        print('ValueError')
+s.symmetric_difference_update(t)
+print(s)
+s.add('t')
+print(s)
+s.remove('t')
+print(s)
+s.discard('g')
+print(s)
+print(s.pop())
+s.шт
 
-white = 1 - k
 
-print(f'Red : {255 * white * (1 - c)}')
-print(f'Green : {255 * white * (1 - m)}')
-print(f'Blue : {255 * white * (1 - y)}')
+
