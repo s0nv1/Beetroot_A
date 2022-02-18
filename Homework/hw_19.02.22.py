@@ -3,7 +3,7 @@
 # and returns a dict containing all unique words as keys
 # and the number of occurrences as values.
 
-dict_sentence = dict([(item, ind) for ind, item in enumerate(input().split())])
+dict_sentence = {item: ind for ind, item in enumerate(input().split())}
 print(dict_sentence)
 
 # Task 2
@@ -25,7 +25,7 @@ prices = {
 
 
 def total_price_of_stoke(a, b):
-    return dict([(key, value * b[key]) for key, value in a.items()])
+    return {key: value * b[key] for key, value in a.items()}
 
 
 total_price = total_price_of_stoke(stock, prices)
