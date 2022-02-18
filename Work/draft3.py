@@ -35,3 +35,13 @@ countries = ['Ukraine', 'Belarus', 'France', 'Germany',
 dict1 = [(x, countries[d.index(x)]) for x in d]
 dict_main = dict(dict1)
 print(dict_main)
+
+for key in dict_main:
+    print(key, end=' ')
+print()
+for value in dict_main.values():
+    print(value, end=' ')
+print()
+for key, value in dict_main.items():
+    print(key, value, sep=":", end=' ')
+

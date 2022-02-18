@@ -36,3 +36,15 @@ while True:
     points += 1
 
 help(enumerate)
+
+t = [1, 2, 3, 4, 5]
+
+for ind, item in enumerate(t):
+    print(ind, item, )
+
+for item in t:
+    if item == 6:
+        break
+    print(item)
+else:
+    print('ok')
