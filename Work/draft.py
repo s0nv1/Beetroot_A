@@ -1,25 +1,21 @@
-# Множества set()
-s = set('world')
-t = set('hello')
-print(s)
-print(len(s))
-print('o' in s)
-print(s.isdisjoint(t))
-print(s == t)
-print(s.issubset(t))
-print(s.issuperset(t))
-print(s.difference(t))
-
-s.symmetric_difference_update(t)
-print(s)
-s.add('t')
-print(s)
-s.remove('t')
-print(s)
-s.discard('g')
-print(s)
-print(s.pop())
-s.шт
 
 
+def name_first(species, name, **lines):
+	pet = {}
+	pet['species'] = species
+	pet['name'] = name
+	for key, value in lines.items():
+		pet[key] = value
+	return pet
+my_pet = name_first('Huski', 'Koshka', color='White', age=2)
+print(my_pet)
 
+def print_tree(n):
+	for i in range(n):
+		for j in range(n - i):
+			print(' ', end='')
+		for k in range(2*i + 1):
+			print('*',end='')
+		print()
+
+print_tree(4)
