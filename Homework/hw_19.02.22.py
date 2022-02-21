@@ -3,7 +3,8 @@
 # and returns a dict containing all unique words as keys
 # and the number of occurrences as values.
 
-dict_sentence = {item: ind for ind, item in enumerate(input().split())}
+sentence = input().split()
+dict_sentence = {i: sentence.count(i) for i in sentence}
 print(dict_sentence)
 
 # Task 2

@@ -1,27 +1,15 @@
-s = [1, 2, 3, 4, 5]
-st = tuple(s)
-print(st)
-print(s.__sizeof__())
-print(st.__sizeof__())
-print(st.index(5))
-print(st.count(3))
+# dict_sentence = {item: ind for item input().split()}
+# print(dict_sentence)
 
-
-s = {1, 3, 4, 6, 3}
-print(id(s))
-text = tuple(s)
-print(text)
-
-textlist = [item for item in text]
-print(textlist)
-
-A = ("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat")
-
-
-
-a = ("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat")
-print(id(a))
-b = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
-c = a + tuple(b)
-print(a)
-print(id(c))
+# n = input().split()
+# d = {}
+# for i in n:
+#     count = 1
+#     for j in n[n.index(i) + 1:]:
+#         if i == j:
+#             count += 1
+#     d[i] = count
+# print(d)
+sentence = input().split()
+dict_sentence = {i: sentence.count(i) for i in sentence}
+print(dict_sentence)
