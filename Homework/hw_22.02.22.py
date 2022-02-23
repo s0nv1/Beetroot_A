@@ -38,4 +38,4 @@ def make_operation(*args):
         print(total)
 
 
-make_operation('+', 6)
+make_operation('+', 5, 5, -10, -20)
