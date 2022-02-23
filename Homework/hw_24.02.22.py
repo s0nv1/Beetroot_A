@@ -1,6 +1,6 @@
 # Task 1
 # If I change the error to KeyError in the opps() function, the key_error() function will catch an error.
-# And print the appropriate error text. If we leave an IndexError in opps(). I will get an IndexError.
+# And print the appropriate error text. If I leave an IndexError in opps(). I will get an IndexError.
 def opps():
     raise IndexError
 
