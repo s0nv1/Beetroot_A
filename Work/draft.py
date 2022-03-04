@@ -1,12 +1,19 @@
-
-def opps():
-    raise IndexError
+import random
 
 
-def key_error():
-    try:
-        opps()
-    except KeyError:
-        print('KeyError')
+presents = ['Winner', 'Losser', 'Losser']
+random.shuffle(presents)
+rand_door = {i + 1: presents[i] for i in range(3)}
 
-key_error()
+x = int(input('Выбирите дверь 1, 2, 3: '))
+
+
+if rand_door[x] == 'Winner':
+    print(f'Я открываю пустую дверь. И это {}')
+
+
+
+
+
+
+
